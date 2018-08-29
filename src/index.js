@@ -1,13 +1,12 @@
 import React from 'react'
-
 import Preact, { h } from "preact"
 
-export default class PreactWidget extends React.Component {
+class PreactWidget extends React.Component {
   constructor() {
-    super();
+    super()
     this.divRef = React.createRef()
   }
-
+  
   componentDidMount() {
     this.renderPreact()
   }
@@ -17,10 +16,12 @@ export default class PreactWidget extends React.Component {
   }
 
   renderPreact() {
+    console.log(this.props.children);
+    
     Preact.render(
-      this.props.child,
+      this.props.children,
       this.divRef.current
-    );
+    )
   }
 
   render() {
@@ -28,3 +29,5 @@ export default class PreactWidget extends React.Component {
     return <div ref={this.divRef} />
   }
 }
+
+export default PreactWidget
