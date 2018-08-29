@@ -1,0 +1,22 @@
+{
+  "name": "preact-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themodernjavascript/preact-widget.git"
+  },
+  "author": "Bunlong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/themodernjavascript/preact-widget/issues"
+  },
+  "homepage": "https://github.com/themodernjavascript/preact-widget#readme",
+  "dependencies": {
+    "preact": "^8.3.1"
+  }
+}
