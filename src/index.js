@@ -1,5 +1,6 @@
-import React from 'react'
+/** @jsx h */
 import Preact, { h } from "preact"
+import React from 'react'
 
 class PreactWidget extends React.Component {
   constructor() {
@@ -16,10 +17,10 @@ class PreactWidget extends React.Component {
   }
 
   renderPreact() {
-    console.log(this.props.children);
-    
+    const children = this.props.children
+
     Preact.render(
-      this.props.children,
+      children,
       this.divRef.current
     )
   }
